@@ -10,8 +10,8 @@ ARG GID="1011"
 # Define environment vars
 ENV WORK_DIR=/data/work \
     SHARED_DIR=/data/shared/fli4l \
-    DEBIAN_FRONTEND=noninteractive
-    LC_ALL en_US.UTF-8
+    DEBIAN_FRONTEND=noninteractive \
+    LC_ALL en_US.UTF-8 \
     TZ 'Europe/Berlin'
 
 # Mount point for development workspace

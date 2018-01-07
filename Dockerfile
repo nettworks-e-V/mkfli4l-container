@@ -11,6 +11,8 @@ ARG GID="1011"
 ENV WORK_DIR=/data/work \
     SHARED_DIR=/data/shared/fli4l \
     DEBIAN_FRONTEND=noninteractive
+    LC_ALL en_US.UTF-8
+    TZ 'Europe/Berlin'
 
 # Mount point for development workspace
 RUN mkdir -p ${WORK_DIR}
@@ -46,10 +48,7 @@ RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \
  && dpkg-reconfigure locales \
  && /usr/sbin/update-locale LANG=en_US.UTF-8
 
-ENV LC_ALL en_US.UTF-8
-
 # Set timezone to Europe/Berlin
-ENV TZ 'Europe/Berlin'
 RUN echo $TZ > /etc/timezone && \
     rm /etc/localtime && \
     ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \

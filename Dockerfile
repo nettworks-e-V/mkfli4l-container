@@ -43,7 +43,8 @@ RUN apt-get install -y --no-install-recommends \
     build-essential \
     flex \
     bison \
-    file
+    file \
+    doxygen
 
 # Set locale to UTF8
 RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \

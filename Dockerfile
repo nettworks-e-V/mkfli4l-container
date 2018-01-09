@@ -40,7 +40,9 @@ RUN apt-get install -y --no-install-recommends \
     subversion \
     make \
     binutils \
-    build-essential
+    build-essential \
+    flex \
+    bison
 
 # Set locale to UTF8
 RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \

@@ -42,7 +42,8 @@ RUN apt-get install -y --no-install-recommends \
     binutils \
     build-essential \
     flex \
-    bison
+    bison \
+    file
 
 # Set locale to UTF8
 RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \

@@ -46,7 +46,8 @@ RUN apt-get install -y --no-install-recommends \
     file \
     doxygen \
     valgrind \
-    graphviz
+    graphviz \
+    python
 
 # Set locale to UTF8
 RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \

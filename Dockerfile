@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:11-slim
 MAINTAINER Florian Wolters <fli4l@florian-wolters.de>
 
 # Define build arguments
